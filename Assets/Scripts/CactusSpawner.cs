@@ -22,16 +22,12 @@ public class CactusSpawner : MonoBehaviour
     {
         if(timer == timeToSpawn)
         {
-            int index = Random.Range(0, 6);
+            int index = Random.Range(0, objectsToSpawn.Length - 1);
            
             Instantiate(objectsToSpawn[index], transform.position, transform.rotation);
-            
-            Debug.Log("Prefab Spawned");
            
             timeToSpawn = Random.Range(minSpawnTime, maxSpawnTime);
             timer = 0;
-            
-            Debug.LogWarning(index);
         }
 
         timer++;
