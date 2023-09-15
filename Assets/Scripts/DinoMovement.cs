@@ -17,7 +17,7 @@ public class DinoMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && transform.position.y < -3)
+        if(Input.GetKeyDown(KeyCode.Space) && transform.position.y < -2.9)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
