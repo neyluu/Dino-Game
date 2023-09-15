@@ -5,7 +5,7 @@ using UnityEngine;
 public class CactusGenerator : MonoBehaviour
 {
     public GameMenager gameMenager;
-    
+
     // Start is called before the first frame update
     void Start()
     {
