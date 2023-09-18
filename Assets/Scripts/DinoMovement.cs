@@ -6,6 +6,7 @@ using UnityEngine;
 public class DinoMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public Animator animator;
     public int jumpPower;
 
     // Start is called before the first frame update
@@ -21,5 +22,6 @@ public class DinoMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
+        animator.SetFloat("Speed", 1);
     }
 }
