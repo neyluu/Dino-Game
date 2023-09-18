@@ -6,10 +6,10 @@ Project Description
 
 ### Todo
 
-- [ ] Poprawić poruszanie się Dino, troche za wysoko skacze i za wolno opada  
+- [ ] Im szybciej działa gra, tym rzadziej generują się kaktusy  
 - [ ] Animacja Dino  
 - [ ] Chmurki w tle  
-- [ ] Usuwanie kaktusów po zniknięciu z ekranu, może object loop czy jakos tak  
+- [ ] WAŻNE -- Usuwanie kaktusów po zniknięciu z ekranu, może object loop czy jakos tak  
 - [ ] Zmiana sposobu poruszanie się Dino, na strzałki dodatkowo, kucanie  
 - [ ] Game Over - Wykrywanie kolizji po zderzeniu z przeszkodą  
 - [ ] Generowanie ptaków  
@@ -17,6 +17,7 @@ Project Description
 
 ### In Progress
 
+- [ ] Poprawić poruszanie się Dino, troche za wysoko skacze i za wolno opada  
 
 ### Done ✓
 
