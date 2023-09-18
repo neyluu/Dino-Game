@@ -11,6 +11,7 @@ public class CactusSpawner : MonoBehaviour
 
     private float timer = 0;
     private float timeToSpawn;
+    public int deadZone = -12;
 
     void Start()
     {

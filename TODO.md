@@ -9,7 +9,6 @@ Project Description
 - [ ] Im szybciej działa gra, tym rzadziej generują się kaktusy  
 - [ ] Animacja Dino  
 - [ ] Chmurki w tle  
-- [ ] WAŻNE -- Usuwanie kaktusów po zniknięciu z ekranu, może object loop czy jakos tak  
 - [ ] Zmiana sposobu poruszanie się Dino, na strzałki dodatkowo, kucanie  
 - [ ] Game Over - Wykrywanie kolizji po zderzeniu z przeszkodą  
 - [ ] Generowanie ptaków  
@@ -21,5 +20,6 @@ Project Description
 
 ### Done ✓
 
+- [x] WAŻNE -- Usuwanie kaktusów po zniknięciu z ekranu, może object loop czy jakos tak  
 - [x] Sprawdzić czy wszystkie rodzaje kaktusów się generują  
 

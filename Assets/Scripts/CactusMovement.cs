@@ -5,7 +5,7 @@ using UnityEngine;
 public class CactusGenerator : MonoBehaviour
 {
     public GameMenager gameMenager;
-    public int deadZone = -12;
+    public CactusSpawner cactusSpawner;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +18,9 @@ public class CactusGenerator : MonoBehaviour
     {
         transform.position = transform.position + (Vector3.left * gameMenager.gameSpeed) * Time.deltaTime;
 
-        if(transform.position.x < deadZone)
+        if(transform.position.x < cactusSpawner.deadZone)
         {
-            // Destroy();
+            Destroy(gameObject);
         }
     }
 }
