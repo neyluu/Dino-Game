@@ -409,8 +409,9 @@ MonoBehaviour:
   - {fileID: 1960248678791557717}
   - {fileID: 9115268869535864200}
   - {fileID: 3242856584305155138}
-  minSpawnTime: 1
-  maxSpawnTime: 2
+  gameMenager: {fileID: 1729691298}
+  minSpawnTime: 8
+  maxSpawnTime: 12
   deadZone: -12
 --- !u!1 &571564319
 GameObject:
