@@ -6,6 +6,7 @@ using UnityEngine;
 public class CactusSpawner : MonoBehaviour
 {
     public GameObject[] objectsToSpawn;
+    public GameMenager gameMenager;
     public float minSpawnTime = 1;
     public float maxSpawnTime = 5;
 
@@ -15,7 +16,7 @@ public class CactusSpawner : MonoBehaviour
 
     void Start()
     {
-        timeToSpawn = Random.Range(minSpawnTime, maxSpawnTime);
+        timeToSpawn = Random.Range(minSpawnTime, maxSpawnTime) / gameMenager.gameSpeed;
     }
 
     // Update is called once per frame
@@ -32,8 +33,8 @@ public class CactusSpawner : MonoBehaviour
 
     void spawnCactus()
     {
-            int index = Random.Range(0, objectsToSpawn.Length);
-            Instantiate(objectsToSpawn[index], transform.position, transform.rotation);
-            timeToSpawn = Random.Range(minSpawnTime, maxSpawnTime);
+        int index = Random.Range(0, objectsToSpawn.Length);
+        Instantiate(objectsToSpawn[index], transform.position, transform.rotation);
+        timeToSpawn = Random.Range(minSpawnTime, maxSpawnTime) / gameMenager.gameSpeed;
     }
 }

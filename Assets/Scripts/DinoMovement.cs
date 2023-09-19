@@ -22,6 +22,6 @@ public class DinoMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
-        animator.SetFloat("Speed", 1);
+        // animator.SetFloat("Speed", 1);
     }
 }
