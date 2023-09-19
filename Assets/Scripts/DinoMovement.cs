@@ -12,16 +12,27 @@ public class DinoMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+    
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && transform.position.y < -2.95)
+        if((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && transform.position.y < -2.95)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
-        // animator.SetFloat("Speed", 1);
+
+        //jumping animation
+        if(transform.position.y > -2.8f)
+        {
+            animator.SetFloat("Speed", 2);
+        }
+
+        //running animation
+        if(transform.position.y <= -2.9f)
+        {
+            animator.SetFloat("Speed", 0);
+        }
     }
 }

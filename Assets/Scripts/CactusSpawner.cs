@@ -25,7 +25,7 @@ public class CactusSpawner : MonoBehaviour
         if(timer > timeToSpawn)
         {
             spawnCactus();
-            timer = 0;
+            timer -= timeToSpawn;
         }
 
         timer += Time.deltaTime;
