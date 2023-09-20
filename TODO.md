@@ -6,18 +6,22 @@ Project Description
 
 ### Todo
 
+- [ ] UI - highScore i score  
+- [ ] IDEA - dynamiczna zmiana koloru tła z postępem gry  
+- [ ] highScore zapisywany do pliku  
+- [ ] Play Again  
 - [ ] GameOverScreen  
 - [ ] Chmurki w tle  
 - [ ] Generowanie ptaków  
-- [ ] Score  
 
 ### In Progress
 
-- [ ] Im szybciej działa gra, tym rzadziej generują się kaktusy  
-- [ ] Poprawić poruszanie się Dino, troche za wysoko skacze i za wolno opada  
+- [ ] Score - wyświetlanie w ui  
 
 ### Done ✓
 
+- [x] Im szybciej działa gra, tym rzadziej generują się kaktusy  
+- [x] Poprawić poruszanie się Dino, troche za wysoko skacze i za wolno opada  
 - [x] Game Over - Wykrywanie kolizji po zderzeniu z przeszkodą  
 - [x] Animacja Dino  
 - [x] WAŻNE -- Usuwanie kaktusów po zniknięciu z ekranu, może object loop czy jakos tak  

@@ -10,9 +10,6 @@ public class CactusGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //to test animation
-        // gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
-
         gameObject.tag = "Obstacle";
     }
 

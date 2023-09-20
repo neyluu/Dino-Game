@@ -49,7 +49,6 @@ public class DinoMovement : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Obstacle"))
         {
-            Debug.Log("collide");
             gameMenager.GameOver();
         }
     }

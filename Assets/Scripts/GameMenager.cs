@@ -9,6 +9,7 @@ public class GameMenager : MonoBehaviour
     [HideInInspector] public float gameSpeed = 5f;
     public float initialGameSpeed = 5f;
     public float gameSpeedIncrease = 0.1f;
+    public float score = 0;
 
     private DinoMovement dino;
     private CactusSpawner spawner;
@@ -30,6 +31,7 @@ public class GameMenager : MonoBehaviour
         if(!isGameOver)
         {
             gameSpeed += gameSpeedIncrease * Time.deltaTime;
+            Score();
         }
     }
 
@@ -40,5 +42,10 @@ public class GameMenager : MonoBehaviour
 
         spawner.gameObject.SetActive(false);
         dino.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+    }
+
+    void Score()
+    {
+        score += gameSpeed * Time.deltaTime;
     }
 }
