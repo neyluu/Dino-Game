@@ -24,14 +24,14 @@ public class CactusSpawner : MonoBehaviour
     {
         if(timer > timeToSpawn)
         {
-            spawnCactus();
+            SpawnCactus();
             timer -= timeToSpawn;
         }
 
         timer += Time.deltaTime;
     }
 
-    void spawnCactus()
+    void SpawnCactus()
     {
         int index = Random.Range(0, objectsToSpawn.Length);
         Instantiate(objectsToSpawn[index], transform.position, transform.rotation);

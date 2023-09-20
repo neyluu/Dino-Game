@@ -6,9 +6,8 @@ Project Description
 
 ### Todo
 
-- [ ]   
+- [ ] GameOverScreen  
 - [ ] Chmurki w tle  
-- [ ] Game Over - Wykrywanie kolizji po zderzeniu z przeszkodą  
 - [ ] Generowanie ptaków  
 - [ ] Score  
 
@@ -19,6 +18,7 @@ Project Description
 
 ### Done ✓
 
+- [x] Game Over - Wykrywanie kolizji po zderzeniu z przeszkodą  
 - [x] Animacja Dino  
 - [x] WAŻNE -- Usuwanie kaktusów po zniknięciu z ekranu, może object loop czy jakos tak  
 - [x] Sprawdzić czy wszystkie rodzaje kaktusów się generują  

@@ -7,32 +7,41 @@ public class DinoMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Animator animator;
+    private GameMenager gameMenager;
+
     public int jumpPower;
 
     // Start is called before the first frame update
     void Start()
     {
-    
+        gameMenager = FindAnyObjectByType<GameMenager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && transform.position.y < -2.95)
+        if(!gameMenager.isGameOver)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-        }
+            if((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && transform.position.y < -2.95)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            }
 
-        //jumping animation
-        if(transform.position.y > -2.8f)
+            //jumping animation
+            if(transform.position.y > -2.8f)
+            {
+                animator.SetFloat("Speed", 2);
+            }
+
+            //running animation
+            if(transform.position.y <= -2.9f)
+            {
+                animator.SetFloat("Speed", 0);
+            }
+        }
+        else
         {
             animator.SetFloat("Speed", 2);
-        }
-
-        //running animation
-        if(transform.position.y <= -2.9f)
-        {
-            animator.SetFloat("Speed", 0);
         }
     }
 
@@ -41,7 +50,7 @@ public class DinoMovement : MonoBehaviour
         if(collision.gameObject.CompareTag("Obstacle"))
         {
             Debug.Log("collide");
+            gameMenager.GameOver();
         }
-        
     }
 }
