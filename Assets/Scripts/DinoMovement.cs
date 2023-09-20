@@ -35,4 +35,13 @@ public class DinoMovement : MonoBehaviour
             animator.SetFloat("Speed", 0);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Obstacle"))
+        {
+            Debug.Log("collide");
+        }
+        
+    }
 }

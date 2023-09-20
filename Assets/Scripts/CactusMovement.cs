@@ -12,6 +12,8 @@ public class CactusGenerator : MonoBehaviour
     {
         //to test animation
         // gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+
+        gameObject.tag = "Obstacle";
     }
 
     // Update is called once per frame
