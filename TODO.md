@@ -11,11 +11,11 @@ Project Description
 
 ### In Progress
 
-- [ ] Generowanie ptaków  
 - [ ] Bird animation  
 
 ### Done ✓
 
+- [x] Generowanie ptaków  
 - [x] Play Again  
 - [x] GameOverScreen  
 - [x] highScore zapisywany do pliku  
