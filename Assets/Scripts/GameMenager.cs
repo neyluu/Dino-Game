@@ -5,6 +5,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class GameMenager : MonoBehaviour
 {
@@ -87,5 +88,10 @@ public class GameMenager : MonoBehaviour
     void showHighScore(int highScore)
     {
         highScoreLabel.GetComponent<TextMeshProUGUI>().text = highScore.ToString("000000");
+    }
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
