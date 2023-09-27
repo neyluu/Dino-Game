@@ -7,18 +7,18 @@ Project Description
 ### Todo
 
 - [ ] IDEA - dynamiczna zmiana koloru tła z postępem gry  
-- [ ] highScore zapisywany do pliku  
-- [ ] Play Again  
-- [ ] GameOverScreen  
 - [ ] Chmurki w tle  
 - [ ] Generowanie ptaków  
 
 ### In Progress
 
-- [ ] UI - highScore i score  
+- [ ] Play Again  
+- [ ] GameOverScreen  
 
 ### Done ✓
 
+- [x] highScore zapisywany do pliku  
+- [x] UI - highScore i score  
 - [x] Score - wyświetlanie w ui  
 - [x] Im szybciej działa gra, tym rzadziej generują się kaktusy  
 - [x] Poprawić poruszanie się Dino, troche za wysoko skacze i za wolno opada  

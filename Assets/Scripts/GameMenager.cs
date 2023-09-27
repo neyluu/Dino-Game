@@ -20,6 +20,7 @@ public class GameMenager : MonoBehaviour
 
     public GameObject scoreLabel;
     public GameObject highScoreLabel;
+    public GameObject gameOverScreen;
 
     private void Awake()
     {
@@ -60,6 +61,8 @@ public class GameMenager : MonoBehaviour
 
         spawner.gameObject.SetActive(false);
         dino.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+
+        gameOverScreen.SetActive(true);
 
         PlayerPrefs.Save();
     }
