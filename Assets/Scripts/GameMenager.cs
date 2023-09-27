@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.UIElements;
 
 public class GameMenager : MonoBehaviour
 {
@@ -13,6 +15,8 @@ public class GameMenager : MonoBehaviour
 
     private DinoMovement dino;
     private CactusSpawner spawner;
+
+    public GameObject scoreLabel;
 
     private void Awake()
     {
@@ -47,5 +51,6 @@ public class GameMenager : MonoBehaviour
     void Score()
     {
         score += gameSpeed * Time.deltaTime;
+        scoreLabel.GetComponent<TextMeshProUGUI>().text = Mathf.Floor(score).ToString("000000");
     }
 }

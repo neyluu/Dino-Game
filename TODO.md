@@ -6,7 +6,6 @@ Project Description
 
 ### Todo
 
-- [ ] UI - highScore i score  
 - [ ] IDEA - dynamiczna zmiana koloru tła z postępem gry  
 - [ ] highScore zapisywany do pliku  
 - [ ] Play Again  
@@ -16,10 +15,11 @@ Project Description
 
 ### In Progress
 
-- [ ] Score - wyświetlanie w ui  
+- [ ] UI - highScore i score  
 
 ### Done ✓
 
+- [x] Score - wyświetlanie w ui  
 - [x] Im szybciej działa gra, tym rzadziej generują się kaktusy  
 - [x] Poprawić poruszanie się Dino, troche za wysoko skacze i za wolno opada  
 - [x] Game Over - Wykrywanie kolizji po zderzeniu z przeszkodą  
