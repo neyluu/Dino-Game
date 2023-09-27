@@ -8,15 +8,16 @@ Project Description
 
 - [ ] IDEA - dynamiczna zmiana koloru tła z postępem gry  
 - [ ] Chmurki w tle  
-- [ ] Generowanie ptaków  
 
 ### In Progress
 
-- [ ] Play Again  
-- [ ] GameOverScreen  
+- [ ] Generowanie ptaków  
+- [ ] Bird animation  
 
 ### Done ✓
 
+- [x] Play Again  
+- [x] GameOverScreen  
 - [x] highScore zapisywany do pliku  
 - [x] UI - highScore i score  
 - [x] Score - wyświetlanie w ui  
